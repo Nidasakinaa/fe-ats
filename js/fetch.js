@@ -10,7 +10,8 @@ function isiTableBiodata(results) {
 function isiRow(value) {
     let content = 
     isiTabel.replace("#NAMA#", value.nama)
-            .replace("#NPM#", value.datadiri.npm)
+            .replace("#NAMAA#", value.nama)
+            .replace("#NPMM#", value.datadiri.npm)
             .replace("#JENIS KELAMIN#", value.jk)
             .replace("#AGAMA#", value.agama)
             .replace("#KELAS#", value.datadiri.kelas)
