@@ -1,0 +1,1 @@
+export let urlAPI = "https://ws-ats2024-d2eba2e3a16f.herokuapp.com/biodata";
