@@ -9,17 +9,20 @@ function isiTableBiodata(results) {
 }
 function isiRow(value) {
     let content = 
-    isiTabel.replace("#NAMA#", value.biodata.nama)
-            .replace("#PRODI#", value.biodata.prodi)
-            .replace("#NPM#", value.biodata.npm)
-            .replace("#KELAS#", value.biodata.kelas)
-            .replace("#ANGKATAN#", value.angkatan)
-            .replace("#JALAN#", value.jalan)
-            .replace("#KOTA#", value.biodata.kota)
-            .replace("#KODE POS#", value.biodata.kodepos)
+    isiTabel.replace("#NAMA#", value.nama)
+            .replace("#NPM#", value.datadiri.npm)
+            .replace("#JENIS KELAMIN#", value.jk)
+            .replace("#AGAMA#", value.agama)
+            .replace("#KELAS#", value.datadiri.kelas)
+            .replace("#ANGKATAN#", value.datadiri.angkatan)
+            .replace("#JALAN#", value.alamat.jalan)
+            .replace("#KODE POS#", value.alamat.kodepos)
+            .replace("#KOTA#", value.alamat.kota)
             .replace("#WARNA#", getRandomColor())
             .replace(/#WARNALOGO#/g, getRandomColorName());
         addInner("iniTabel", content);
 }
+
+
 
 
